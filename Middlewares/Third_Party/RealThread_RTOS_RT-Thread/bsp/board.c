@@ -63,6 +63,8 @@ RT_WEAK void *rt_heap_end_get(void)
  */
 void rt_hw_board_init()
 {
+    MX_USART1_UART_Init();
+
     /* System Clock Update */
     SystemCoreClockUpdate();
     
